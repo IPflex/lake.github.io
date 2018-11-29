@@ -1,0 +1,468 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	color: #11110d;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+a{
+	text-decoration: none;
+}
+.centr{
+	min-width: 1200px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.visually-hidden{
+	display: none;
+}
+.main-navigation{ 	
+	position: fixed;
+	width: 100%;
+	max-width: 1550px;
+	background-color: #ffffff;
+	margin-top: -50px;
+	z-index: 10;
+	border-radius: 0px 0px 5px 5px;
+	border-bottom:1px solid #EEEEEE;
+	box-shadow: 0 0 1px 1px #EEEEEE;
+}
+.main-list {
+	margin: 0;
+	padding: 0;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 50px;
+
+}
+.main-header li{
+    list-style: none;
+}
+.main-header li:after{
+	content: "";
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 1px;
+	bottom: 0px;
+	opacity:0;
+	background-color: #747474;
+	transition:all ease 0.5s;
+}
+.main-header li:hover:after,
+.main-header li:focus:after{
+	opacity: 1;
+	bottom:3px;
+}
+.main-header li:hover a,
+.main-header li:focus a{
+color: #747474;
+}
+.main-list a{
+	color:#11110d;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+main{
+	margin-top: 50px;
+}
+.main-photo{
+	background-image: url("../image/2.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 600px;
+	
+}
+.main-photo ul{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.main-photo li{
+	height: 55px;
+	width: 34%;
+	list-style: none;
+	text-align: center;
+	background-color: rgba(150, 150, 150, 0.3);
+}
+.main-photo li:hover,
+.main-photo li:focus{
+	background-color: #16c0cc;
+}
+.main-photo a{
+	display: inline-block;
+	color:#ffffff;
+	font-size: 28px;
+	margin: 15px 0;
+}
+.main-description{
+	padding: 0px 15%;
+
+}	
+
+.main-description p{
+	color: #11110d;
+	background-color: #ffffff;
+
+    font-family: 'Marmelad', Arial, sans-serif;
+    font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+}
+.title{
+	font-family: 'Marmelad', Arial, sans-serif;
+    font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+	color: #ffffff;
+}
+.main-aboutus{
+	background-color: #16c0cc;
+	color: #ffffff;
+	min-height: 260px;
+
+	display: flex;
+}
+.aboutus-title{
+	margin:10px 0;
+}
+.image-description,
+.main-image figure{
+	margin: 0;
+	height: 100%;
+}
+.aboutus-desc{
+	position: relative;
+	
+	
+	flex:2 1 100px;
+}
+.aboutus-desc p{
+	text-align: center;
+	padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.main-image{
+	flex:3 0 100px;
+}
+.image-description{
+	position: relative;
+	overflow: hidden;
+}
+.image-description img{
+	height: 100%;
+	width: 100%;
+	
+}
+/*.description-container{
+	position: relative;
+	margin: 0;
+	top:-70px;
+}*/
+/*.main-pictures{
+	display: flex;
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.main-pictures-image{
+	flex-grow: 1;
+}*/
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+.facilities{
+	background-color:  #ffffff;
+	color: #11110d;
+}
+.facilities-title{
+	color: #16c0cc;
+}
+.item-img{
+	display: block;
+	background-image: url("../image/My icons collection-SVG-sprite.svg");
+	width:70px;
+	height: 70px;
+	background-color: #2ffff2;
+	margin: 10px auto;
+}
+.facilities-list{
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+}
+.facilities-item{
+	flex-shrink: 0;
+	list-style: none;
+	min-height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	margin: 10px 10px;
+	box-shadow: 0 0 10px 2px #E3E3E3;
+	transition: all ease 0.5s;
+	margin: 60px 0;
+}
+.facilities-item:hover{
+	box-shadow: 0 0 20px 4px #ACE2E9;
+}
+.facilities-item p,
+.facilities-item h3{
+	text-align: center;
+	margin: 5px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arbors{
+	color: #ffffff;
+	background-color: #16c0cc;
+
+	display: flex;
+	flex-direction: row-reverse;
+	min-height: 200px;
+}
+.arbors-desc p{
+	text-align: center;
+
+}
+.arbors-desc{
+
+	flex: 2 100px;
+}
+.arbors-image{
+	
+	flex: 3 100px;
+}
+.arbors-image img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*.services-item{
+	display:inline-block;
+	width: 24.8%;
+	position: relative;
+}
+.services-item img{
+	width: 100%;
+}
+.dws-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.services-item a{
+	display: block;
+	color: #ffffff;
+}
+.dws-text p{
+	text-align: center;
+	padding: 10% 18%;
+}
+.dws-text h3{
+	font-size: 25px;
+	text-align: center;
+}*/
+
+
+
+.services{
+	background-color:#ffffff; 
+}
+
+.services-title{
+	color: #16c0cc;
+}
+.services-list{
+	padding: 0;
+	display: flex;
+	list-style: none;
+	
+	flex-wrap: wrap;
+
+}
+.services-item{
+	flex-basis: 100px;
+	flex-grow: 1;
+	min-height: 250px;
+	
+	background-color: #FD9696;
+	width: 20%;
+
+}
+.services-item a{
+	color: #111111;
+	
+	
+}
+
+.dws-text{
+	
+	/*background-image: url("../image/c1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100%;
+	position: relative;*/
+}
+.dws-text h3{
+	font-size: 25px;
+	text-align: center;
+}
+.dws-text p{
+	
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+.contacts{
+	background-color: #d9d9d9;
+	color: #11110d;
+}
+.contacts p{
+	margin:0;
+}
+.contacts-title{
+	color:#11110d;
+}
+.contacts-container{
+	width: 100%;
+	height: 300px;
+}
+.contact-information{
+	float: left;
+	width: 45%;
+	margin: 20px 25px;
+	padding: 0 5px;
+	height: 175px;
+	line-height: 43px;
+}
+.contact-information p{
+	border-bottom: 1px solid #999999;
+		
+}
+
+.route{
+	
+	border-bottom: 1px solid #999999;
+
+	float: right;
+	width: 45%;
+	margin: 20px 25px;
+	padding: 0 5px;
+	height: 175px;
+}
+.route-title{
+	margin-top:0;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.main-footer{
+	background-color: #525252;
+	color: #ffffff;
+}
+.footer-social{
+	background-color: #242424;
+	color: #ffffff;
+}
+.footer-social{
+    text-align: center;
+
+}
+.social-list{
+	list-style: none;
+	padding: 0;
+	width: 250px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+.social-list li{
+	height: 30px;
+
+	
+}
+.social-button{
+ color: #ffffff;
+}
+
