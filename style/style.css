@@ -413,25 +413,39 @@ main{
 .services-item{
 	flex-basis: 300px;
 	min-height: 380px;
-	background-color: #000000;
+	
 	position: relative;
 	border-radius: 7px;
-
+	box-shadow: 0 0px 30px 2px #AAAAAA;
+	overflow: hidden;
 }
 .dws-photo{
 	height: 100%;
-	background: url(../image/c1.jpg) no-repeat 50% 50%;
-	background-size: auto 100% ;
+	transform: scale(1);
 	filter:brightness(100%) blur(0px);
 	transition: all ease 0.5s;
 	border-radius: 7px;
-	box-shadow: 0 0px 30px 2px #AAAAAA;
+}
+.dws-photo-1{
+	background: url(../image/услуги1.jpg) no-repeat 50% 50%;
+	background-size: auto 100%;
+}
+.dws-photo-2{
+	background: url(../image/услуги3.jpg) no-repeat 50% 50%;
+	background-size: auto 100%;
+}
+.dws-photo-3{
+	background: url(../image/услуги2.jpg) no-repeat 50% 50%;
+	background-size: auto 100%;
+}
+.dws-photo-4{
+	background: url(../image/c1.jpg) no-repeat 50% 50%;
+	background-size: auto 100%;
 }
 .services-item:hover .dws-photo,
 .services-item:active .dws-photo{
 	filter: brightness(60%) blur(2px);
-	box-shadow: 0 0px 20px 3px #AAAAAA;
-	background-size:  auto 107%;
+	transform: scale(1.05);
 }
 .dws-text{
 	top:0;
