@@ -22,6 +22,7 @@ h2{
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
+	box-shadow: 0 0 40px 1px #D6D6D6;
 }
 .visually-hidden{
 	display: none;
@@ -204,9 +205,22 @@ main{
 }
 
 
-
-
-
+.item-img,
+.social{
+	background: url("../image/css_sprites.png") no-repeat;
+}
+.item-1{
+	background-position: 41% 0% ;
+}
+.item-2{
+	background-position: 81% 0%;
+}
+.item-3{
+	background-position: 61% 0% ;
+}
+.item-4{
+	background-position: 99% 0%;
+}
 
 
 
@@ -217,14 +231,13 @@ main{
 	color: #11110d;
 }
 .facilities-title{
-	color: #16c0cc;
+	color: #000000;
 }
 .item-img{
+	background-size: auto 95px;
 	display: block;
-	background-image: url("../image/My icons collection-SVG-sprite.svg");
-	width:70px;
-	height: 70px;
-	background-color: #2ffff2;
+	width:93px;
+	height: 95px;
 	margin: 10px auto;
 }
 .facilities-list{
@@ -235,8 +248,8 @@ main{
 .facilities-item{
 	flex-shrink: 0;
 	list-style: none;
-	min-height: 230px;
-	width: 230px;
+	height: 250px;
+	width: 250px;
 	border-radius: 50%;
 	margin: 10px 10px;
 	box-shadow: 0 0 10px 2px #E3E3E3;
@@ -526,7 +539,8 @@ main{
 	height: 175px;
 }
 .route-title{
-	margin-bottom: 10px;
+	line-height: 20px;
+	margin:7px 0 10px 0;
 }
 
 
@@ -548,24 +562,49 @@ main{
 }
 .footer-social{
     text-align: center;
-
+	min-height: 75px;
 }
 .social-list{
 	list-style: none;
 	padding: 0;
-	width: 250px;
+	width: 140px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 50px;
-}
-.social-list li{
 	height: 30px;
-
-	
 }
-.social-button{
- color: #ffffff;
+
+.social{
+	font-size: 0px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size:auto 195%;
+}	
+
+.social-inst{
+	background-position: 19% 0%;
+}
+.social-fb{
+	background-position: 10% 0%;
+}
+
+.social-list li{
+	filter: drop-shadow( 0px 0px 0px #16c0cc);
+	transform: scale(1);
+	transition: all ease-out 0.3s;
+}
+.social-list li:nth-child(1):hover{
+	filter: drop-shadow( 0px 0px 2px #597da3);
+	transform: scale(1.05);
+}
+.social-list li:nth-child(2):hover{
+	filter: drop-shadow( 0px 0px 2px #FF4100);
+	transform: scale(1.05);
+}
+.social-list li:nth-child(3):hover{
+	filter: drop-shadow( 0px 0px 2px #3a5998);
+	transform: scale(1.05);
 }
 
