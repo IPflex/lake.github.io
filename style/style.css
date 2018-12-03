@@ -290,12 +290,110 @@ main{
 }
 .arbors-desc p{
 	text-align: center;
-	height: 60%;
+	height: 62%;
 }
 .arbors-desc{
 	flex: 2 100px;
 	position: relative;
 }
+.arbor-description{
+	display: flex;
+	overflow: hidden;
+	position: absolute;
+	height:34%;
+	width: 70%;
+	left: 100%;
+	bottom: 0;
+}
+
+.description-container{
+	top:0;
+	left:0;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	height: 70%;
+	width:500%;
+	transform:translateX(0%);
+	transition: all ease 1s;
+	top: 47px;
+}
+.arbors-price{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 200px;
+	flex-grow: 1;
+	height: 85px;
+	background-color: #16c0cc;
+	border-right: 1px solid white;
+}
+.arbors-price span{
+	margin: 2px 25px;
+	
+}
+.arbors-number{
+	position: absolute;
+	top:-43%;
+	opacity: 0;
+	width:200px;
+	height: 40px;
+	margin-left: 25px;
+	transition: all 0.4s ease 0.9s;
+}
+.price-description{
+	height: 95px;
+	flex-grow: 1;
+	flex-basis: 200px;
+	
+	transform: translateX(-100%);
+	transition: all 0.6s ease 0.7s;
+	z-index: -1;
+}
+.price-description p{
+	margin: 7px 10px;
+	line-height: 21px;
+}
+#slide1:checked ~ .arbor-description .number-1,
+#slide2:checked ~ .arbor-description .number-2,
+#slide3:checked ~ .arbor-description .number-3,
+#slide4:checked ~ .arbor-description .number-4,
+#slide5:checked ~ .arbor-description .number-5{
+	opacity: 1;
+}
+
+
+#slide1:checked ~ .arbor-description .description-arbors-1,
+#slide2:checked ~ .arbor-description .description-arbors-2,
+#slide3:checked ~ .arbor-description .description-arbors-3,
+#slide4:checked ~ .arbor-description .description-arbors-4,
+#slide5:checked ~ .arbor-description .description-arbors-5{
+	transform:translateX(0%);
+	transition-delay: 0.5s;
+}
+.description-container:hover,
+#slide1:checked ~ .arbor-description > .description-container{
+	transform:translateX(0%);
+}
+#slide2:checked ~ .arbor-description > .description-container{
+	transform:translateX(-20%);
+}
+
+#slide3:checked ~ .arbor-description > .description-container{
+	transform:translateX(-40%);
+}
+
+#slide4:checked ~ .arbor-description > .description-container{
+	transform:translateX(-60%);
+}
+#slide5:checked ~ .arbor-description > .description-container{
+	transform:translateX(-80%);
+}
+
+
+
+
+
 
 .wrapper-image{
 	flex: 3 100px;
@@ -352,17 +450,20 @@ main{
 	background-size: 100% auto;
 }
 .wrapper-image .controls {
-	left: 125%;
-	top: 70%;
-	width:205px;
+	left: 122%;
+	top: 65%;
+	width:250px;
+	height: 50px;
 	position: absolute;
+	text-align: center;
+	border-bottom: 1px solid white;
 }
 
 .wrapper-image label {
 	cursor: pointer;
 	display: inline-block;
 	height: 8px;
-	margin: 25px 12px 0 16px;
+	margin: 25px 12px 0 12px;
 	position: relative;
 	width: 8px;
 	border-radius: 50%;
@@ -379,7 +480,7 @@ main{
 }
 
 .wrapper-image label:after {
-	border: 2px solid #ddd;
+	border: 2px solid white;
 	content: " ";
 	display: block;
 	height: 12px;
@@ -563,6 +664,9 @@ main{
 .footer-social{
     text-align: center;
 	min-height: 75px;
+}
+.footer-contacts{
+	margin-left: 25px;
 }
 .social-list{
 	list-style: none;
